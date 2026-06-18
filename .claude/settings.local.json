@@ -1,0 +1,42 @@
+{
+  "env": {
+    "CLAUDE_ENV_FILE": ".venv/bin/activate"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(gh api:*)",
+      "Bash(aws ce *)",
+      "Bash(./auto/lint-python)",
+      "Bash(./auto/test)",
+      "mcp__pagerduty__get_incident",
+      "mcp__pagerduty__list_log_entries",
+      "mcp__pagerduty__get_service",
+      "mcp__pagerduty__get_escalation_policy",
+      "mcp__pagerduty__get_schedule",
+      "mcp__pagerduty__get_user_data",
+      "mcp__pagerduty__list_users",
+      "WebFetch(domain:developer.pagerduty.com)",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__click",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_snapshot",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__take_screenshot",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__navigate_page",
+      "mcp__plugin_chrome-devtools-mcp_chrome-devtools__new_page",
+      "Bash(cat)",
+      "Bash(bash /tmp/compare-services.sh)",
+      "Bash(python -m pytest*)",
+      "Bash(GH_PAGER=cat GH_PROMPT_DISABLED=1 gh pr view*)",
+      "Bash(GH_PAGER=cat GH_PROMPT_DISABLED=1 gh pr list*)",
+      "Bash(GH_PAGER=cat GH_PROMPT_DISABLED=1 gh pr diff*)",
+      "Bash(grep -E '\\\\.\\(yml|yaml|sh|json|tf|toml\\)$')",
+      "mcp__plugin_atlassian_atlassian__getAccessibleAtlassianResources",
+      "mcp__plugin_atlassian_atlassian__getJiraIssue",
+      "mcp__plugin_context-mode_context-mode__ctx_batch_execute",
+      "mcp__plugin_context-mode_context-mode__ctx_search",
+      "mcp__plugin_context-mode_context-mode__ctx_execute",
+      "mcp__plugin_context-mode_context-mode__ctx_execute_file",
+      "mcp__plugin_context-mode_context-mode__ctx_stats",
+      "mcp__plugin_context-mode_context-mode__ctx_upgrade",
+      "mcp__plugin_atlassian_atlassian__search"
+    ]
+  }
+}
